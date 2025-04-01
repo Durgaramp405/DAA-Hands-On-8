@@ -82,10 +82,10 @@ bst.insert(20)
 bst.insert(40)
 bst.insert(60)
 bst.insert(80)
-
-print("Inorder Traversal:", bst.inorder())  # Should print the sorted order of inserted elements
-print("Search 10:", bst.search(10) is not None)  # Should return True
-print("Delete 50")
-bst.delete(50)
-print("Inorder Traversal after deletion:", bst.inorder())  # Should print BST after deletion
-
+print("Binary Search Tree inorder after insertion:", bst.inorder())
+bst.delete(20)
+print("Binary Search Tree inorder after deleting the key is:", bst.inorder())
+bst.delete(30)
+print("Binary Search Tree inorder after deleting the key is:", bst.inorder())
+bst.delete(10)
+print("Binary Search Tree inorder after deleting the key is:", bst.inorder())
